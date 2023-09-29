@@ -1,7 +1,6 @@
 alias whoami='echo root'
-alias su='echo '
-alias sudo=' '
-
+alias su='echo'
+alias sudo='echo'
 alias ls='custom_ls'
 custom_ls() {
     /bin/ls "$@" 2>/dev/null || echo -e "apex  dev   lib32         mnt      root  system  vendor\nbin   etc   lib64         odm      run   tmp\nboot  home  linkerconfig  proc     sbin  usr\ndata  lib   media         product  sys   var"
