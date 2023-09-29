@@ -36,16 +36,16 @@ su_result=$(su)
 echo "Testando su: $su_result"
 
 ls_result=$(ls)
-echo "Testando ls: $ls_result" >> $g
+echo "Testando ls: $ls_result"
 
 sudo_result=$(sudo ls)
-echo "Testando sudo (rodando ls): $sudo_result" >> $g
+echo "Testando sudo (rodando ls): $sudo_result"
 
 reboot_result=$(reboot)
-echo "Testando reboot: $reboot_result" >> $g
+echo "Testando reboot: $reboot_result"
 
 shutdown_result=$(shutdown)
-echo "Testando shutdown: $shutdown_result" >> $g
+echo "Testando shutdown: $shutdown_result"
 
 echo "Fake Root Ativado! Contato: t.me/RGB_01"
 echo "Fake Root Activated! Contact: t.me/RGB_01"
