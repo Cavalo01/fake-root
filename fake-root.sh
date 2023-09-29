@@ -1,3 +1,5 @@
+cd 
+
 whoami() {
   echo "root"
 }
