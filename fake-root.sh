@@ -19,16 +19,6 @@ function sudo() {
   echo "$result"
 }
 
-function reboot() {
-  sleep 10
-}
-
-function shutdown() {
-  while true; do
-  sleep 20
-  done
-}
-
 whoami_result=$(whoami)
 echo "Testando whoami: $whoami_result"
 
@@ -40,12 +30,6 @@ echo "Testando ls: $ls_result"
 
 sudo_result=$(sudo ls)
 echo "Testando sudo (rodando ls): $sudo_result"
-
-reboot_result=$(reboot)
-echo "Testando reboot: $reboot_result"
-
-shutdown_result=$(shutdown)
-echo "Testando shutdown: $shutdown_result"
 
 echo "Fake Root Ativado! Contato: t.me/RGB_01"
 echo "Fake Root Activated! Contact: t.me/RGB_01"
