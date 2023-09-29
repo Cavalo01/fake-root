@@ -3,7 +3,7 @@ function whoami() {
 }
 
 function su() {
-  : # Não faz nada
+  :
 }
 
 function ls() {
@@ -16,5 +16,4 @@ function sudo() {
   echo "$result"
 }
 
-echo "Fake-Root Ativado! Contato: t.me/RGB_01"
-echo "Fake-Root Activated! Contact: t.me/RGB_01"
+./fake-root.sh
