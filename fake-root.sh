@@ -31,17 +31,11 @@ function shutdown() {
   done
 }
 
-function poweroff() {
-  while true; do
-  sleep 20
-  done
-}
-
 whoami_result=$(whoami)
-echo "Testando whoami: $whoami_result" >> $g
+echo "Testando whoami: $whoami_result"
 
 su_result=$(su)
-echo "Testando su: $su_result" >> $g
+echo "Testando su: $su_result"
 
 ls_result=$(ls)
 echo "Testando ls: $ls_result" >> $g
@@ -54,11 +48,6 @@ echo "Testando reboot: $reboot_result" >> $g
 
 shutdown_result=$(shutdown)
 echo "Testando shutdown: $shutdown_result" >> $g
-
-poweroff_result=$(poweroff)
-echo "Testando powerorf: $poweroff_result" >> $g
-
-rm $g
 
 echo "Fake Root Ativado! Contato: t.me/RGB_01"
 echo "Fake Root Activated! Contact: t.me/RGB_01"
