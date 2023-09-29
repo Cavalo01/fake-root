@@ -1,18 +1,17 @@
-cd 
-
-whoami() {
+function whoami() {
   echo "root"
 }
 
-su() {
-  :
+function su() {
+  : # Não faz nada
 }
 
-ls() {
+function ls() {
   /bin/ls "$@" 2>/dev/null || echo -e "apex  dev   lib32         mnt      root  system  vendor\nbin   etc   lib64         odm      run   tmp\nboot  home  linkerconfig  proc     sbin  usr\ndata  lib   media         product  sys   var"
 }
 
-sudo() {
+function sudo() {
+  local result
   result="$(eval $@)"
   echo "$result"
 }
