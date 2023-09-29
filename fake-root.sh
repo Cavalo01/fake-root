@@ -1,5 +1,3 @@
-g='temp.txt'
-
 function whoami() {
   echo "root"
 }
